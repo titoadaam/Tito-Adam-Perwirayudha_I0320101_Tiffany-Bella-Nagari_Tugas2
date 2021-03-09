@@ -1,6 +1,7 @@
 #TITO ADAM PERWIRAYUDHA
 #NIM I0320101
 #KELAS C
+#SOAL LATIHAN NOMOR 2
 invalid_input = True
 print("\033[1;32;40m\n")
 def start():
