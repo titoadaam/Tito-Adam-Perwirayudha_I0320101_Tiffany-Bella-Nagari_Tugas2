@@ -3,7 +3,6 @@
 #KELAS C
 #EXERCISE 2.3
 
-
 #menampilkan informasi program
 print("Las dan keliling lingkaran")
 
@@ -11,7 +10,7 @@ print("Las dan keliling lingkaran")
 r = float(input("Masukan nilai Jari-jari: "))
 
 #Menghitung luas lingkaran
-luas_lingkaran = 3.14 (r ** 2)
+luas_lingkaran = 3.14*(r ** 2)
 
 #menghitung keliling lingkaran
 keliling_lingkaran = 2 * 3.14 * r
