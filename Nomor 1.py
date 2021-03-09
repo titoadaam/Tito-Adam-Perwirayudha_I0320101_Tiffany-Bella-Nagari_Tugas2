@@ -1,108 +1,68 @@
 #TITO ADAM PERWIRAYUDHA
 #NIM I0320101
 #KELAS C
-
 invalid_input = True
 print("\033[1;32;40m\n")
 def start():
     question = input('''
     SELAMAT DATANG DI APLIKASI PENGHITUNG SERBAGUNA 2000!
-    (made by Tito Adam P)
 
 
     Pilih Program:
-    1) Menghitung Luas Persegi Panjang
-    2) Menghitung Luas Lingkaran
-    3) Menghitung Kubus
+    1) Menghitung Luas Dan Keliling Persegi Panjang
+    2) Menghitung Luas Dan Keliling Lingkaran
+    3) Menghitung Luas Dan Volume Kubus
     4) Menghitung Konversi Suhu Celcius -> Farenheit
     5) Menghitung Konversi Reamur -> Kelvin
 
 Program yang dipilih (masukan angka) = ''')
-
     if question == "1":
         print("""
 
 
-        MENGHITUNG LUAS PERSEGI PANJANG
+        MENGHITUNG LUAS DAN KELILING PERSEGI PANJANG
 
         """)
+
         panjang = int(input("Masukan PANJANG dari persegi panjang = "))
         lebar = int(input("Masukan LEBAR dari persegi panjang = "))
 
         luas_persegi_panjang = (panjang * lebar)
+        keliling_persegi_panjang = ((panjang + lebar) * 2)
 
         print("Luas persegi panjang adalah = ", luas_persegi_panjang)
+        print("Keliling persegi panjang adalah = "), keliling_persegi_panjang
         print("======================================================")
     elif question == "2":
         print("""
 
 
-                    MENGHITUNG LUAS LINGKARAN
+        MENGHITUNG LUAS DAN KELILING LINGKARAN
 
                     """)
-        question = input("""
-        Diketahui : 
-        1) JARI-JARI atau 
-        2) DIAMETER
-        Masukan Angka = """)
-        if question == "1":
-            jari_jari = int(input("Masukan JARI-JARI dari lingkaran = "))
+        jari_jari = int(input("Masukan JARI-JARI dari lingkaran = "))
 
-            luas_lingkaran = (3.14 * jari_jari * jari_jari)
+        luas_lingkaran = (3.14 * jari_jari * jari_jari)
+        keliling = (2 * 3.14 * jari_jari)
 
-            print("Luas Lingkaran Adalah = ", luas_lingkaran)
-            print("======================================================")
-        elif question == "2":
-            diameter = int(input("Masukan DIAMETER dari lingkaran = "))
-
-            luas_lingkaran = (3.14 * diameter)
-
-            print("Luas Lingkaran Adalah = ", luas_lingkaran)
-            print("======================================================")
-        else:
-            print("""
-            PROGRAM TIDAK DITEMUKAN (Hanya tersedia 1 - 2)
-
-            ======================================================
-                          !!!PROGRAM RESTARTING!!!
-            ======================================================
-
-            """)
+        print("Luas Lingkaran Adalah = ", luas_lingkaran)
+        print("Keliling Lingkaran Adalah = " , keliling)
+        print("======================================================")
     elif question == "3":
         print("""
 
 
-                    MENGHITUNG KUBUS
+                    MENGHITUNG LUAS DAN VOLUME KUBUS
 
                     """)
-        question = input("""
-        Pilih yang ingin di hitung : 
-        1) Luas permukaan kubus
-        2) Volume Kubus
-        Masukan Angka = """)
-        if question == "1":
-            rusuk = int(input("Masukan PANJANG RUSUK dari kubus = "))
+        rusuk = int(input("Masukan PANJANG RUSUK dari kubus = "))
 
-            luas_permukaan_kubus = (6 * rusuk * rusuk)
+        luas_permukaan_kubus = (6 * rusuk * rusuk)
+        volume_kubus = (rusuk * rusuk * rusuk)
 
-            print("Luas Permukaan Kubus = ", luas_permukaan_kubus)
-            print("======================================================")
-        elif question == "2":
-            sisi = int(input("Masukan PANJANG RUSUK dari kubus = "))
-
-            volume_kubus = (sisi * sisi * sisi)
-
-            print("Volume Kubus Adalah = ", volume_kubus)
-            print("======================================================")
-        else:
-            print("""
-            PROGRAM TIDAK DITEMUKAN (Hanya tersedia 1 - 2)
-
-            ======================================================
-                          !!!PROGRAM RESTARTING!!!
-            ======================================================
-
-            """)
+        print("Volume Kubus Adalah = ", volume_kubus)
+        print("Luas Permukaan Kubus = ", luas_permukaan_kubus)
+        print("======================================================")
     elif question == "4":
         print("""
 
