@@ -31,7 +31,7 @@ Program yang dipilih (masukan angka) = ''')
         keliling_persegi_panjang = ((panjang + lebar) * 2)
 
         print("Luas persegi panjang adalah = ", luas_persegi_panjang)
-        print("Keliling persegi panjang adalah = "), keliling_persegi_panjang
+        print("Keliling persegi panjang adalah = ", keliling_persegi_panjang)
         print("======================================================")
     elif question == "2":
         print("""
