@@ -1,6 +1,7 @@
 #TITO ADAM PERWIRAYUDHA
 #NIM I0320101
 #KELAS C
+#SOAL LATIHAN NOMOR 2
 print("APLIKASI PENGECEKAN BERAT BADAN")
 nama = str(input("Masukan Nama Anda = "))
 umur = int(input("Masukan Umur Anda = "))
